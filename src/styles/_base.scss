@@ -7,5 +7,18 @@ $dark-text: #585858;
 $light-text: white;
 
 // FONT
-$default-font-family: 'Jost', sans-serif;;
+$default-font-family: "Jost", sans-serif;
 $default-font-size: 16px;
+
+// OTHER
+$default-padding: 18px;
+
+@mixin buttons {
+  font-weight: 400;
+  height: 40px;
+  min-width: 75px;
+  max-width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

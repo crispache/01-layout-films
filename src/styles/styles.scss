@@ -13,3 +13,47 @@ html {
   font-size: $default-font-size;
   background-color: $primary-color;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: $default-padding;
+  position: sticky;
+  top: 0;
+  background-color: $primary-color;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+
+    img {
+      height: 80px;
+    }
+
+    .platform-title {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+
+    button {
+      @include buttons;
+      background-color: $primary-color;
+      color: $light-text;
+
+      &:hover {
+        background-color: white;
+        color: $tertiary-color;
+      }
+    }
+  }
+}
